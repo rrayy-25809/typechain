@@ -1,7 +1,8 @@
-import { init, exit } from "myPackage"
+import { init, exit } from "./myPackage"
 
 init({
-    url: "str"
+    url: "str",
+    debug: false
 })
 
 exit(1)

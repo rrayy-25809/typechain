@@ -5,6 +5,8 @@
         "target": "ES6", //TS가 어떤 JS 버전으로 빌드될 지 알려줌
         "lib": ["ES6"], //JS API를 TS에 불러올 수 있음
         "strict": true,
-        "allowJs": true, // TS 파일안에 JS 불러오기 허용
+        // "allowJs": true, // TS 파일안에 JS 불러오기 허용
+        "esModuleInterop": true, //CommonJS 모듈을 ES6 모듈처럼 불러올 수 있게 해줌(import * as fs from 'fs' 처럼 안 쓸수 있음)
+        "module": "CommonJS"
     }
 }
